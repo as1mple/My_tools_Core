@@ -1,6 +1,7 @@
 import csv
+
 import pandas as pd
-from pandas.core.frame import DataFrame
+from pandas import DataFrame
 
 
 def read_csv(path: str) -> list:
@@ -10,6 +11,7 @@ def read_csv(path: str) -> list:
     return data
 
 
-def read_csv(path: str) -> DataFrame:
+def read_csv_pandos(path: str) -> DataFrame:
     data = pd.read_csv(path)
     return data
+

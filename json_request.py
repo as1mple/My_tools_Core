@@ -1,6 +1,6 @@
 import aiohttp as aiohttp
 from requests import Session
-from response import json as res
+import response.json as res
 
 
 def fetch(url: str, session: Session) -> res:
